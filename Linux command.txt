@@ -1,0 +1,42 @@
+﻿Linux command 
+Update
+sudo apt update && sudo apt dist upgrade -y
+Install apps
+sudo apt install curl rsync git gdebi nautilus-admin nautilus-extension-gnome-terminal sassc gnome-tweaks gnome-shell-extension-manager -y
+
+
+Gnome shell
+unzip -o $HOME/Downloads/gnome-extensions.zip -d $HOME/.local/share/gnome-shell/
+White sur gtk
+cd $HOME/Downloads
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+Cd the gtk
+./install.sh -l  -c Light -c Dark -s 180 -m
+
+
+ln -sf "$HOME/.config/gtk-4.0/gtk-Light.css" "$HOME/.config/gtk-4.0/gtk.css"
+
+
+ln -sf "$HOME/.config/gtk-4.0/gtk-Dark.css" "$HOME/.config/gtk-4.0/gtk.css"
+
+
+This image provides instructions for setting up the WhiteSur cursor theme on a Linux system. Here's a summary:
+Create the .icons directory in your home folder (if it doesn’t already exist):
+bash
+Copy code
+mkdir -p $HOME/.icons
+1. Copy the WhiteSur cursor theme into the .icons directory:
+bash
+Copy code
+cp -rv dist/ $HOME/.icons/WhiteSur-cursors
+2. Would you like more help with installing or applying the cursor theme?
+4o
+You said:
+
+ChatGPT said:
+This image shows instructions for installing fonts and wallpapers on a Linux system. Here’s a breakdown:
+1. Install Fonts
+Unzip the fonts.zip file into the .local/share/ directory:
+bash
+Copy code
+unzip -o $HOME/Downloads/fonts.zip -d $HOME/.local/share/
